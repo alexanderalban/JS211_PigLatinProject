@@ -12,10 +12,32 @@ const rl = readline.createInterface({
 
 
 const pigLatin = (word) => {
-
   // Your code here
+  word = word.toLowerCase().trim();
+  word = word.split('');
+  let vowel = ["a", "e", "i", "o", "u"];
 
-}
+  for (let i = 0; i < word.length; i++) {
+    if ((vowel .includes(word[0])) === true) {
+      word.push("yay");
+      word = word.join('');
+      return word;
+    } else if (vowel .includes(word[1]) === false) {
+      let x = word.splice(0, 2);
+      x = x.join('');
+      word.push(x);
+      word.push("ay");
+      word= word.join('');
+      return word;
+    } else {
+      let x = word.shift();
+      word.push(x);
+      word.push("ay");
+      word = word.join('');
+      return word;
+    }
+  }
+};
 
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js
