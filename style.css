@@ -1,0 +1,63 @@
+html {
+  background-image: url(./images/abonyi-kevin-pig-unsplash.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  text-align: center;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 28pt;
+  color: white;
+}
+
+#main-title {
+  text-shadow: 3px 3px 0 rgb(232, 180, 205), -1px -1px 0 rgb(232, 180, 205),
+    1px -1px 0 rgb(232, 180, 205), -1px 1px 0 rgb(232, 180, 205),
+    1px 1px 0 rgb(232, 180, 205);
+  margin-bottom: 10px;
+}
+
+#disclaimer {
+  text-shadow: 3px 3px 0 black, -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black, 1px 1px 0 black;
+  font-size: 14pt;
+  margin-top: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  justify-items: center;
+  font-family: "Cabin Sketch", cursive;
+  color: white;
+  text-shadow: 3px 3px 0 black, -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black, 1px 1px 0 black;
+}
+
+#textbox-label {
+  font-size: 34pt;
+}
+
+#textbox {
+  font-size: 24pt;
+}
+
+#display-element {
+  font-size: 60pt;
+}
+
+button {
+  color: white;
+  background-color: rgb(232, 180, 205);
+  padding: 20px;
+  font-size: 20pt;
+  font-family: "Cabin Sketch", cursive;
+  border-radius: 25px;
+}

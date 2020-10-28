@@ -5,13 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pig Latin Transformer</title>
   <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+  <script src="website-main.js"></script>
 </head>
   <body>
+    <header>
+      <h1 id="main-title">Pig Latin! It's Latin! For Pigs!*</h1>
+      <p id="disclaimer">*Not actually Latin. Or for real pigs.</p>
+    </header>
     <main>
-      <h1>Pig Latin! It's Latin! For Pigs!</h1>
-      <div id="display-element"></div>
-      <button onclick="displayDate()">Click Me</button>
+      <section id="display-element"></section>
+      <label id="textbox-label" for="textbox">Enter your regular word here!</label><br>
+      <input type="text" id="textbox" name="textbox"><br>
+      <button id="pig-button" onclick="pigLatin()">Pig-ify!</button><br>
     </main>
   </body>
 </html>
