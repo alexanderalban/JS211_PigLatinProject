@@ -48,14 +48,14 @@ const pigLatin = (word) => {
   for (let i = 0; i < indivWords.length; i++) {
     let indivLetters = indivWords[i].split('');
     console.log(indivLetters);
-    if (vowel .includes(indivLetters[0]) === true) {
+    if (vowel.includes(indivLetters[0]) === true) {
       indivLetters.push('yay');
       indivLetters = indivLetters.join('');
       newPigArray.push(indivLetters);
       console.log(newPigArray);
-      return indivLetters;
-    } 
-    else if (vowel .includes(indivLetters[1]) === false) {
+      return indivLetters.toString();
+    }
+    else if (vowel.includes(indivLetters[1]) === false) {
       let x = indivLetters.splice(0, 2);
       x = x.join('');
       indivLetters.push(x);
@@ -63,8 +63,8 @@ const pigLatin = (word) => {
       indivLetters = indivLetters.join('');
       newPigArray.push(indivLetters);
       console.log(newPigArray);
-      return indivLetters;
-    } 
+      return indivLetters.toString();
+    }
     else {
       let x = indivLetters.shift();
       indivLetters.push(x);
@@ -72,7 +72,7 @@ const pigLatin = (word) => {
       indivLetters = indivLetters.join('');
       newPigArray.push(indivLetters);
       console.log(newPigArray);
-      return indivLetters;
+      return indivLetters.toString();
     }
   }
 };
@@ -83,7 +83,7 @@ const pigLatin = (word) => {
 // to close it ctrl + C
 const getPrompt = () => {
   rl.question('word ', (answer) => {
-    console.log( pigLatin(answer) );
+    console.log(pigLatin(answer));
     getPrompt();
   });
 }
